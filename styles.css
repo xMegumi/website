@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height : 100vh;
+    width: 100vw;
+    background-image: url(images/background-website.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    
+    position: absolute;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar .logo {
+    font-size: 2em;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    margin : 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px
+}
+
+

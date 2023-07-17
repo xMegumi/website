@@ -2,11 +2,18 @@
 <html>
 <head>
   <title>My Simple Webpage</title>
+  <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/ico" href="images/lame.ico">
 </head>
 <body>
   <header>
-    <h1>My Simple Webpage</h1>
+    <div class = "title-container">
+        <a href="index.html">    
+        <img src="images/lame.png" alt="Custom Icon">
+        <h1>My Simple Webpage</h1>
+        </a> 
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -17,28 +24,46 @@
   </header>
 
   <main>
-    <section>
-      <article>
-        <h2>Article 1</h2>
-        <p>This is the content of article 1.</p>
-      </article>
-
-      <article>
-        <h2>Article 2</h2>
-        <p>This is the content of article 2.</p>
-      </article>
-    </section>
-    <div class = "container">     
-        <div class = "box">box 1</div>
-        <div class = "box">box 2</div>
-        <div class = "box">box 3</div>
+    <div class="animated-banner">
+        <img src="images/password.gif" alt="Animated Banner Gif">
     </div>
 
-    <div class="animated-box"></div>
+    <section>
+      <article>
+        <h2>Why are Strong Passwords Important?</h2>
+        <p>A strong password is one that is difficult to guess or crack through brute-force attacks. Brute-force attacks involve trying different combinations of characters until the correct password is found. A weak password, such as “password” or “123456,” can be easily guessed, making it easy for hackers to access an account.<br><br> <strong>According to a study by Verizon, 81% of hacking-related breaches are caused by stolen or weak passwords.</strong> This shows that weak passwords are a significant security risk and can lead to data breaches. Strong passwords are important because they help prevent unauthorized access to personal information and accounts. This is especially important for accounts containing sensitive information, such as financial email and social media accounts. <strong> Psychology of Passwords Report reveals 91% of people know password reuse is insecure, yet two-thirds do it anyway.</strong> This is a dangerous practice because it makes it easy for hackers to gain access to multiple accounts with one password. A secure password makes it difficult for hackers to gain access to these accounts and steal personal information or use the account for malicious purposes.</p>
+        <h2>How to create a strong password?</h2>    
+        <p>Now that we’ve established the importance of strong passwords let’s explore how to create them. Here are some tips for creating a strong password:</p>
+        <ul>
+            <li><strong>Use a mix of characters:</strong> A secure password must include a mix of upper and lowercase letters, numbers, and symbols. This makes it more difficult for hackers to guess passwords through brute-force attacks.</li>
+            <li><strong>Avoid easily guessable information: SplashData’s annual list of the worst passwords shows that “123456” and “password” continue to be the most commonly used passwords.</strong>This highlights the fact that many people still use easily guessable passwords. Avoid using information such as your name, birthdate, or common words. This information can be easily obtained through social media or other online sources.</li>
+            <li><strong>Length matters:</strong> The longer the password, the stronger it is. <strong>The National Institute of Standards and Technology (NIST) recommends using a password length of at least 8 characters, but ideally, passwords should be 12 or more characters long.</strong> This recommendation is based on research that shows longer passwords are more difficult to crack. Aim for a password length of at least 12 characters. This makes it more difficult for hackers to guess the password through brute-force attacks.</li>
+            <li><strong>Don’t reuse passwords:</strong>Avoid reusing passwords for different accounts. If a hacker gains access to one account, they can access all accounts that use the same password. Use a unique password for each account you have.</li>
+            <li><strong>Consider using a password manager: </strong>A password manager can generate strong passwords for you and securely store them. This eliminates the need to remember multiple passwords and ensures that each password is strong and unique. <strong>According to the 2021 ForgeRock Consumer Identity Breach Report, cyberattacks involving usernames and passwords increased 450% over 2019—resulting in more than one billion compromised records in the United States alone.</strong></li>
+            <li><strong>Update your passwords regularly:</strong>It’s a good idea to update your passwords every few months to ensure maximum security. This is especially important for accounts that contain sensitive information.</li>
+        </ul>
+        </article>
+    </section>
+
+    <section>
+    <div class="password-container">
+        <h2>Generate Random Password</h2>
+        <input type="text" id="password-display" readonly>
+        <button id="generate-btn">Generate</button>
+    </div>
+    </section>
+
+    <section>
+    <div class = "text-area-container">
+        <h2>Write something :</h2>
+        <textarea name="input-text" id="" cols="30" rows="10"></textarea>
+    </div>
+    </section>
     </main>
 
   <footer>
     <p>&copy; 2023 My Simple Webpage. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
